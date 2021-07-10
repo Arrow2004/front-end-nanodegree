@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="">
+            Logo
+        </div>
+        <div class="">
+            navigation
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h3>Form Url</h3>
+            <form>
+                <input id="url" type="url" name="url" placeholder="Articale Url">
+                <button type="button" id="onSubmit">Submit</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Form Results:</h3>
+            <div id="results">
+                <p><strong>Model: </strong><span id="model"></span></p>
+                <p><strong>Score tag: </strong><span id="score_tag"></span></p>
+                <p><strong>Agreement: </strong><span id="agreement"></span></p>
+                <p><strong>Subjectivity: </strong><span id="subjectivity"></span></p>
+                <p><strong>Confidence: </strong><span id="confidence"></span></p>
+                <p><strong>Irony: </strong><span id="irony"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>This is a footer</p>
+    </footer>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: #0b1d26;
+    color: #ffffff;
+    text-shadow: 0px 0px 7px #554f4d;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 500;
+    font-family: 'Sans Serif', Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.center {
+    margin-top: 150px;
+    width: 60%;
+    font-size: 2em;
+    text-align: left;
+}
+
+a {
+    display: inline-block;
+    color: #ffffff;
+    margin: 5px;
+    transition: all .2s ease-in;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fbd784;
+    margin: 3px;
+    transform: translateY(-5px);
+}
+
+nav {
+    justify-content: space-around;
+    display: flex;
+    padding-top: 20px;
+}
+.navs{
+    position: fixed;
+    top: 0;
+    padding-top: 0;
+    background: #0b1d26;
+    width: 100%;
+    z-index: 999;
+    margin: 0;
+}
+nav div {
+    margin-top: 0px;
+    font-size: .8em;
+}
+.tagline {
+    display: flex;
+    color: #fbd784;
+    font-size: 12px;
+}
+.tag-line {
+    width: 40px;
+    height: 2px;
+    margin-right: 12px;
+    margin-top: 14px;
+    background-color: #fbd784;
+}
+header {
+    background: url(../images/XXLbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    height: 100vh;
+    width: 100%;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.body {
+    width: 100%;
+    margin-top: 200px;
+}
+.active{
+    background: #ffffff;
+    color: #000;
+    padding: 5px;
+    text-shadow: none;
+}
+#one{
+    background: url(../images/litsey_bg.jpg);
+    margin-top: 200px;
+}
+#three{
+    background: url(../images/direktor_bg.jpg);
+}
+#one,
+#two,
+#three,
+#four {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    width: 100%;
+    padding: 5%;
+    backdrop-filter: blur(12px);
+}
+#two {
+    background: url(../images/litsey1_bg.jpg);
+    flex-direction: row-reverse;
+}
+#four{
+    background: url(../images/litsey1_bg.jpg);
+    flex-direction: row-reverse;
+}
+div.content {
+    width: 40%;
+    font-size: 15px;
+    line-height: 32px;
+    text-align: left;
+}
+div.content a {
+    color: #fbd784;
+    font-size: 15px;
+}
+img {
+    max-width: 30%;
+    border-radius: 2px;
+    box-shadow: 0 0 10px 2px #ffffff;
+    transition: all .8s ease;
+    opacity: 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.toTop{
+    display: block;
+    animation: toTop 3s ease forwards;
+}
+i{
+    margin: 6px;
+}
+footer {
+    display: flex;
+    margin-top: 200px;
+    justify-content: space-between;
+    padding: 50px;
+    font-size: 15px;
+}
+#footer1 {
+    width: 20%;
+    margin-left: 100px;
+}
+.headfoot {
+    margin-bottom: 100px;
+}
+#footer2 {
+    display: flex;
+}
+#footer2 div {
+    margin: 20px;
+}
+.logo{
+    border: none;
+    box-shadow: none;
+    width: 500px;
+}
+.active-section{
+    color: black;
+    text-shadow: 1px 1px 5px white;
+
+}
+@keyframes toTop {
+    0%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-25px);
+        opacity: 1;
+    }
+}
+@media (max-width:800px) {
+    body{
+        overflow-x: hidden;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        margin: 0;
+        background: url(../images/XXLbg2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment:fixed;
+        height: 100vh;
+        background-position: center;
+        width: fit-content;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .body{
+       width: fit-content;
+       padding: 0;
+       margin: 0;
+    }
+    img {
+        margin: 0;
+        max-width: 80%;
+    }
+    #one,
+    #two,
+    #three, #four {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        padding: 10px 0 10px 0;
+        margin: 0;
+    }
+    #one{
+        margin: 100px 0 0 0 ;
+    }
+    div.content {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        text-align: center;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: fit-content;
+        font-size: 12px;
+        padding: 0;
+    }
+    footer div {
+        margin: 0;
+    }
+    footer h1 {
+        font-size: 15px;
+        margin: auto;
+    }
+    #footer1 {
+        width: 80%;
+        margin-left: 10px;
+    }
+    .headfoot{
+        margin: 0;
+    }
+}
+
+@media (max-width:400px) {
+    .center {
+        margin: 0;
+        width: 90%;
+        margin-top: 150px;
+    }
+    div.content{
+        width: fit-content;
+        text-align: center;
+    }
+    .body {
+        width: fit-content;
+        padding: 0;
+    }
+    header {
+        width: 100%;
+        background: url(../images/XXLbg3.jpg);
+        background-size: cover;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0;
+    }
+    #footer1 {
+        width: 600px;
+        margin: 0px;
+    }
+    #one{
+        margin-top: 100px;
+    }
+    #one,
+    #two,
+    #three, #four {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #footer2 {
+        justify-content: space-between;
+        line-height: 15px;
+    }
+    #footer2 div {
+        width: 50%;
+    }
+    
+}

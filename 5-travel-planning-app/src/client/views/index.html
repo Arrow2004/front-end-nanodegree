@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel planning app || Capstone</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="">
+            Logo
+        </div>
+        <div class="">
+            navigation
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h3>Form city and date</h3>
+            <form>
+                <input id="cityName" type="url" name="cityName" placeholder="Please enter  city name">
+                <input type="date" name="data" id="date">
+                <button type="button" id="onSubmit">Submit</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Form Results:</h3>
+            <div id="results">
+                <div class="weather">
+                        <h1 id="cnRes">City name: </h1>
+                        <h2 id="temp">Temperature: </h2>
+                        <h2 id="dateRes">Date: </h2>
+                        <h1>Happy travel!!!</h1>
+                </div>
+            </div>
+        </section>
+        <section id="images">
+            <img src="https://" alt="">
+            <img src="https://" alt="">
+            <img src="https://" alt="">
+            <img src="https://" alt="">
+        </section>
+    </main>
+
+    <footer>
+        <p>This is a footer</p>
+    </footer>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+        </script>
+</body>
+
+</html>
